@@ -1,87 +1,287 @@
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?lines=B.Tech+CSE+Student;Frontend+Developer;Data+Science+Enthusiast;AI+%26+Machine+Learning+Learner;Open+Source+Contributor&center=true&width=500&height=50">
-</p>
+# 📊 Student Performance in Exams – Writing Score Prediction
 
-# Hi, I'm Tanu Priya
+A Machine Learning project that analyzes student performance and predicts **Writing Score** using Exploratory Data Analysis (EDA) and multiple regression algorithms.
 
-## About Me
+---
 
-B.Tech Computer Science Engineering student at Sharda University with a strong interest in Web Development, Data Science, Artificial Intelligence, and Machine Learning. I enjoy building responsive web applications, exploring new technologies, and solving real-world problems through software development.
+## 📌 About The Project
 
-## Skills
+Student academic performance can be influenced by various demographic, educational, and academic factors.
 
-### Programming Languages
-- Python
-- Java
-- JavaScript
-- SQL
+This project analyzes a dataset containing **1,000 student records** and explores the relationships between different student characteristics and their exam scores.
 
-### Web Development
-- HTML
-- CSS
-- JavaScript
+The main goal of this project is to **predict a student's Writing Score** using relevant features such as:
 
-### Database
-- MySQL
+* Gender
+* Race/Ethnicity
+* Parental Level of Education
+* Lunch
+* Test Preparation Course
+* Math Score
+* Reading Score
 
-### Data Analytics
-- Power BI
-- Excel
-- Pandas
-- NumPy
+Several Machine Learning regression models are implemented and compared to identify the model with the best predictive performance.
 
-### Machine Learning
-- Scikit-learn
-- Logistic Regression
+---
 
-### Tools
-- VS Code
-- Git
-- GitHub
-- MySQL Workbench
-- Google Colab
+## 🎯 Objectives
 
-## Projects
+* Perform Exploratory Data Analysis on student performance data.
+* Understand the distribution of student demographic and educational characteristics.
+* Analyze relationships between Math, Reading, and Writing scores.
+* Identify important factors related to Writing Score.
+* Preprocess categorical and numerical data.
+* Build regression models for Writing Score prediction.
+* Evaluate and compare different Machine Learning models.
+* Select the best-performing model based on evaluation metrics.
 
-### Portfolio Website
-A responsive personal portfolio showcasing my education, skills, projects, and achievements.
+---
 
-### AI-Based Breast Cancer Detection
-A machine learning application that predicts breast cancer using Logistic Regression.
+## 📂 Dataset
 
-### Smart Retail Sales Analysis & Demand Prediction
-A data analytics project using SQL, Power BI, and Machine Learning for sales analysis and demand forecasting.
+The dataset contains **1,000 student records** with the following features:
 
-### Driver Hub Platform
-A web-based Driver and Vehicle Management System for registration, vehicle management, ride requests, and administration.
+| Column                      | Description                    |
+| --------------------------- | ------------------------------ |
+| Gender                      | Gender of the student          |
+| Race/Ethnicity              | Race/Ethnicity group           |
+| Parental Level of Education | Education level of parent(s)   |
+| Lunch                       | Type of lunch received         |
+| Test Preparation Course     | Test preparation course status |
+| Math Score                  | Mathematics examination score  |
+| Reading Score               | Reading examination score      |
+| Writing Score               | Writing examination score      |
 
-## Currently Learning
+### 🎯 Target Variable
 
-- React.js
-- Node.js
-- Full Stack Development
-- Data Structures and Algorithms
-- Artificial Intelligence
+**Writing Score**
 
-## Goals
+---
 
-- Build impactful real-world applications
-- Contribute to Open Source
-- Improve problem-solving skills
-- Become a Full Stack AI Developer
+## 🔍 Exploratory Data Analysis
 
-## GitHub Statistics
+The project includes different EDA techniques to understand the dataset and discover meaningful patterns.
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=tanupriya8080-star&show_icons=true&theme=tokyonight)
+### Analysis Performed
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=tanupriya8080-star&layout=compact&theme=tokyonight)
+* Dataset structure and information
+* Missing value analysis
+* Categorical variable analysis
+* Student demographic analysis
+* Score distributions
+* Gender-wise analysis
+* Race/Ethnicity analysis
+* Lunch analysis
+* Test Preparation Course analysis
+* Relationship between Math and Writing Scores
+* Relationship between Reading and Writing Scores
+* Correlation analysis
 
-![GitHub Streak](https://streak-stats.demolab.com/?user=tanupriya8080-star&theme=tokyonight)
+---
 
-## Connect
+## 🛠️ Data Preprocessing
 
-GitHub: https://github.com/tanupriya8080-star
+The following preprocessing steps are performed:
 
-LinkedIn: https://www.linkedin.com/in/your-linkedin-profile
+1. Load the dataset.
+2. Understand the dataset structure.
+3. Check for missing values.
+4. Separate input features and target variable.
+5. Encode categorical variables.
+6. Prepare the data for Machine Learning.
+7. Split the data into training and testing sets.
 
-Email: your-email@example.com
+---
+
+## 🤖 Machine Learning Models
+
+The following regression algorithms are used:
+
+### 1. Linear Regression
+
+Used as a baseline model to establish the relationship between the input features and Writing Score.
+
+### 2. Decision Tree Regressor
+
+A tree-based regression algorithm capable of capturing non-linear relationships in the data.
+
+### 3. Random Forest Regressor
+
+An ensemble learning algorithm that combines multiple decision trees to improve prediction performance.
+
+### 4. Gradient Boosting Regressor
+
+An ensemble technique that builds models sequentially to reduce prediction errors.
+
+---
+
+## 📊 Model Evaluation
+
+The models are evaluated using:
+
+* Mean Absolute Error (MAE)
+* Mean Squared Error (MSE)
+* Root Mean Squared Error (RMSE)
+* R² Score
+
+### Model Performance
+
+| Model                 |   R² Score |
+| --------------------- | ---------: |
+| **Linear Regression** | **0.9436** |
+| Random Forest         |     0.9330 |
+| Gradient Boosting     |     0.9282 |
+| Decision Tree         |     0.8817 |
+
+### Linear Regression Metrics
+
+| Metric   |   Score |
+| -------- | ------: |
+| MAE      |  2.9488 |
+| MSE      | 13.5701 |
+| RMSE     |  3.6838 |
+| R² Score |  0.9436 |
+
+---
+
+## 🏆 Results
+
+Among the tested models, **Linear Regression achieved the highest R² score of 0.9436**.
+
+This indicates that Linear Regression performed better than the other evaluated models for predicting Writing Score on the test data.
+
+The project also demonstrates a strong relationship between students' **Math, Reading, and Writing Scores**.
+
+---
+
+## 🔄 Project Workflow
+
+```text
+Dataset
+   ↓
+Data Loading
+   ↓
+Data Understanding
+   ↓
+Data Cleaning
+   ↓
+Exploratory Data Analysis
+   ↓
+Data Preprocessing
+   ↓
+Feature Encoding
+   ↓
+Train-Test Split
+   ↓
+Model Training
+   ↓
+Model Evaluation
+   ↓
+Model Comparison
+   ↓
+Best Model Selection
+```
+
+---
+
+## 💻 Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-learn
+* Google Colab
+* Jupyter Notebook
+* Git
+* GitHub
+
+---
+
+## 📁 Project Structure
+
+```text
+Student-Performance-Writing-Score/
+│
+├── Student_Performance_EDA_Prediction.ipynb
+├── README.md
+├── dataset/
+│   └── StudentsPerformance.csv
+│
+└── images/
+    └── visualizations/
+```
+
+> Update the filenames/folders if your GitHub repository uses different names.
+
+---
+
+## 🚀 How to Run
+
+### Clone the Repository
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+```
+
+### Install Required Libraries
+
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn
+```
+
+### Run the Project
+
+Open the Jupyter Notebook:
+
+```text
+Student_Performance_EDA_Prediction.ipynb
+```
+
+You can run the notebook using **Jupyter Notebook** or **Google Colab**.
+
+Run the cells sequentially to perform data analysis, visualization, model training, and evaluation.
+
+---
+
+## 🔮 Future Scope
+
+This project can be further improved by:
+
+* Applying hyperparameter tuning.
+* Using cross-validation techniques.
+* Testing additional Machine Learning algorithms.
+* Adding more student-related features.
+* Using larger educational datasets.
+* Developing an interactive prediction application.
+* Deploying the trained model as a web application.
+* Exploring advanced Machine Learning and Deep Learning techniques.
+
+---
+
+## 📚 References
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-learn
+* Student Performance Dataset
+
+---
+
+## 👩‍💻 Author
+
+**Tanu Priya**
+
+B.Tech – Computer Science
+
+---
+
+## ⭐ Conclusion
+
+This project demonstrates how **Exploratory Data Analysis and Machine Learning** can be used to analyze student academic performance and predict Writing Score.
+
+Multiple regression models were implemented and compared, with **Linear Regression achieving the best R² score of 0.9436** among the evaluated models.
