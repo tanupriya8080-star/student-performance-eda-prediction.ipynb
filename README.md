@@ -1,10 +1,10 @@
-# 📊 Student Performance in Exams – Writing Score Prediction
+ Student Performance in Exams – Writing Score Prediction
 
 A Machine Learning project that analyzes student performance and predicts **Writing Score** using Exploratory Data Analysis (EDA) and multiple regression algorithms.
 
----
 
-## 📌 About The Project
+
+ About The Project
 
 Student academic performance can be influenced by various demographic, educational, and academic factors.
 
@@ -22,9 +22,8 @@ The main goal of this project is to **predict a student's Writing Score** using 
 
 Several Machine Learning regression models are implemented and compared to identify the model with the best predictive performance.
 
----
 
-## 🎯 Objectives
+ Objectives
 
 * Perform Exploratory Data Analysis on student performance data.
 * Understand the distribution of student demographic and educational characteristics.
@@ -35,9 +34,8 @@ Several Machine Learning regression models are implemented and compared to ident
 * Evaluate and compare different Machine Learning models.
 * Select the best-performing model based on evaluation metrics.
 
----
 
-## 📂 Dataset
+ Dataset
 
 The dataset contains **1,000 student records** with the following features:
 
@@ -52,17 +50,15 @@ The dataset contains **1,000 student records** with the following features:
 | Reading Score               | Reading examination score      |
 | Writing Score               | Writing examination score      |
 
-### 🎯 Target Variable
+ Target Variable
 
 **Writing Score**
 
----
-
-## 🔍 Exploratory Data Analysis
+ Exploratory Data Analysis
 
 The project includes different EDA techniques to understand the dataset and discover meaningful patterns.
 
-### Analysis Performed
+Analysis Performed
 
 * Dataset structure and information
 * Missing value analysis
@@ -77,9 +73,7 @@ The project includes different EDA techniques to understand the dataset and disc
 * Relationship between Reading and Writing Scores
 * Correlation analysis
 
----
-
-## 🛠️ Data Preprocessing
+ Data Preprocessing
 
 The following preprocessing steps are performed:
 
@@ -91,31 +85,27 @@ The following preprocessing steps are performed:
 6. Prepare the data for Machine Learning.
 7. Split the data into training and testing sets.
 
----
-
-## 🤖 Machine Learning Models
+ 🤖 Machine Learning Models
 
 The following regression algorithms are used:
 
-### 1. Linear Regression
+ 1. Linear Regression
 
 Used as a baseline model to establish the relationship between the input features and Writing Score.
 
-### 2. Decision Tree Regressor
+ 2. Decision Tree Regressor
 
 A tree-based regression algorithm capable of capturing non-linear relationships in the data.
 
-### 3. Random Forest Regressor
+ 3. Random Forest Regressor
 
 An ensemble learning algorithm that combines multiple decision trees to improve prediction performance.
 
-### 4. Gradient Boosting Regressor
+4. Gradient Boosting Regressor
 
 An ensemble technique that builds models sequentially to reduce prediction errors.
 
----
-
-## 📊 Model Evaluation
+ Model Evaluation
 
 The models are evaluated using:
 
@@ -124,7 +114,7 @@ The models are evaluated using:
 * Root Mean Squared Error (RMSE)
 * R² Score
 
-### Model Performance
+Model Performance
 
 | Model                 |   R² Score |
 | --------------------- | ---------: |
@@ -133,7 +123,7 @@ The models are evaluated using:
 | Gradient Boosting     |     0.9282 |
 | Decision Tree         |     0.8817 |
 
-### Linear Regression Metrics
+ Linear Regression Metrics
 
 | Metric   |   Score |
 | -------- | ------: |
@@ -142,9 +132,7 @@ The models are evaluated using:
 | RMSE     |  3.6838 |
 | R² Score |  0.9436 |
 
----
-
-## 🏆 Results
+ Results
 
 Among the tested models, **Linear Regression achieved the highest R² score of 0.9436**.
 
@@ -152,11 +140,9 @@ This indicates that Linear Regression performed better than the other evaluated 
 
 The project also demonstrates a strong relationship between students' **Math, Reading, and Writing Scores**.
 
----
+ Project Workflow
 
-## 🔄 Project Workflow
-
-```text
+text
 Dataset
    ↓
 Data Loading
@@ -180,11 +166,8 @@ Model Evaluation
 Model Comparison
    ↓
 Best Model Selection
-```
 
----
-
-## 💻 Technologies Used
+Technologies Used
 
 * Python
 * Pandas
@@ -197,11 +180,9 @@ Best Model Selection
 * Git
 * GitHub
 
----
+ Project Structure
 
-## 📁 Project Structure
-
-```text
+text
 Student-Performance-Writing-Score/
 │
 ├── Student_Performance_EDA_Prediction.ipynb
@@ -211,27 +192,23 @@ Student-Performance-Writing-Score/
 │
 └── images/
     └── visualizations/
-```
 
 > Update the filenames/folders if your GitHub repository uses different names.
 
----
-
-## 🚀 How to Run
-
-### Clone the Repository
+ How to Run
+ Clone the Repository
 
 ```bash
 git clone YOUR_GITHUB_REPOSITORY_URL
 ```
 
-### Install Required Libraries
+Install Required Libraries
 
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn
 ```
 
-### Run the Project
+Run the Project
 
 Open the Jupyter Notebook:
 
@@ -244,8 +221,7 @@ You can run the notebook using **Jupyter Notebook** or **Google Colab**.
 Run the cells sequentially to perform data analysis, visualization, model training, and evaluation.
 
 ---
-
-## 🔮 Future Scope
+ Future Scope
 
 This project can be further improved by:
 
@@ -259,8 +235,7 @@ This project can be further improved by:
 * Exploring advanced Machine Learning and Deep Learning techniques.
 
 ---
-
-## 📚 References
+ References
 
 * Python
 * Pandas
@@ -270,17 +245,15 @@ This project can be further improved by:
 * Scikit-learn
 * Student Performance Dataset
 
----
 
-## 👩‍💻 Author
+Author
 
 **Tanu Priya**
 
 B.Tech – Computer Science
 
----
 
-## ⭐ Conclusion
+ Conclusion
 
 This project demonstrates how **Exploratory Data Analysis and Machine Learning** can be used to analyze student academic performance and predict Writing Score.
 
